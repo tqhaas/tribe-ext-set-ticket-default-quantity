@@ -1,5 +1,5 @@
 === Events Tickets Extension: Set default quantity of tickets ===
-Contributors: ModernTribe
+Contributors: ModernTribe, twhaas
 Donate link: http://m.tri.be/29
 Tags: events, calendar
 Requires at least: 4.7
@@ -9,7 +9,12 @@ Stable tag: 1.2.0
 License: GPL version 2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Event Tickets' RSVP, Tribe Commerce PayPal, WooCommerce, and/or Easy Digital Downloads ticket default quantity in the form will be set as 1
+Event Tickets' RSVP, Tribe Commerce PayPal, WooCommerce, and/or Easy Digital Downloads ticket default quantity in the form will be set as 1 if only one ticket exists. Leave 0 otherwise.
+
+Rational:
+- Users often complain button "Get Tickets" not working in case of only one ticket on the page
+- Users complain about unwanted tickets in the shopping cart in case of setting all tickets' default quantity to 1
+
 
 == Description ==
 

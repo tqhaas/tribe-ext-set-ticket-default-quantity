@@ -5,7 +5,7 @@
 
     var Tribe_Ticket_Qty = {
         init: function () {
-            var $inputs = $(); // Start with empty jQuery object
+            var $inputs = $();
 
             if (container.length) {
                 $inputs = $inputs.add(container.find('input.tribe-tickets-quantity, .woocommerce .quantity input.qty, .edd.quantity input.edd-input'));
@@ -15,12 +15,12 @@
                 $inputs = $inputs.add(block_container.find('input.tribe-tickets-quantity'));
             }
 
-            // Only set value if exactly one input is found across all containers
             if ($inputs.length === 1) {
                 $inputs.val(1).trigger('change');
             }
 
-            if (v2Container.length) {
+            // Trigger click only if exactly one Ticket V2 container is found
+            if (v2Container.length === 1) {
                 $('.tribe-tickets__tickets-item-quantity-add').trigger('click');
             }
         },
